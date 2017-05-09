@@ -54,7 +54,7 @@ function determineFinalTournamentWinner(teamsPerMatch, numberOfTeams, tournament
             }
             teamScoresPath += "&teamScores=" + teamScores[i];
             path = "http://localHost:8765/winner?tournamentId=" + tournamentId + teamScoresPath + "&matchScore=" + matchScore + '"';
-            
+
             winnerScore = fetchGetData(path);
             displayFilledSquare(squareIndex++);
 
